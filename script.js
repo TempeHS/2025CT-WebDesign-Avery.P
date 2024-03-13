@@ -1,9 +1,13 @@
 
 let enterName = prompt ("Enter your name");
 let playerGuess;
-let playerFeedback = "test";
+let computerGuess = randomNum();
+let playerFeedback = computerGuess;
 loadDiv ()
 
+function randomNum() {
+    return Math.floor(Math.random() *  (10 - 1 + 1) + 1)
+}
 
 
 function loadDiv ()  {
